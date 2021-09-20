@@ -11,9 +11,16 @@ namespace Kontoverwaltung
             do
             {
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Kontoverwaltung:\n----------------");
+
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("1) Geld einzahlen");
+
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("2) Geld auszahlen");
+
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("3) Kontostand abfragen");
                 Console.WriteLine("4) Beenden");
                 Console.Write("Bitte wählen: ");
@@ -66,9 +73,6 @@ namespace Kontoverwaltung
             //        break;
             //}
 
-
-
-            Console.ReadLine();
         }
     }
 

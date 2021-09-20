@@ -22,7 +22,12 @@ namespace Kontoverwaltung
 
         public decimal KontostandAnzeigen()
         {
+            if (kontostand < 0)
+                Console.ForegroundColor = ConsoleColor.Red;
+            else
+                Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Kontostand: {kontostand:f2}");
+            Console.ForegroundColor = ConsoleColor.White;
             return kontostand;
         }
     }
