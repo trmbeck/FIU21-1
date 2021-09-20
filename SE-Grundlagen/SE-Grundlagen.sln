@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{74CE8A7A-06B0-4BDD-BFD2-D1B5D65066DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{74CE8A7A-06B0-4BDD-BFD2-D1B5D65066DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Übungen", "Übungen", "{C3D4BCBD-1B22-45C1-A74A-B21F45C511E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontoverwaltung", "Kontoverwaltung\Kontoverwaltung.csproj", "{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{74CE8A7A-06B0-4BDD-BFD2-D1B5D65066DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74CE8A7A-06B0-4BDD-BFD2-D1B5D65066DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74CE8A7A-06B0-4BDD-BFD2-D1B5D65066DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DADBF30-53F9-4194-A66D-B3C7E6F0E2DE} = {C3D4BCBD-1B22-45C1-A74A-B21F45C511E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2470D0A2-8D65-4C41-94F5-4324F1DB51F6}
