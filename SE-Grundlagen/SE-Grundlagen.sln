@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passwort", "Passwort\Passwo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanzzahlRechner2", "GanzzahlRechner2\GanzzahlRechner2.csproj", "{711ACB4B-3063-4F9E-88E6-10481741B3BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatischeElemente", "StatischeElemente\StatischeElemente.csproj", "{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{711ACB4B-3063-4F9E-88E6-10481741B3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711ACB4B-3063-4F9E-88E6-10481741B3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711ACB4B-3063-4F9E-88E6-10481741B3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{A994FBE0-6E9A-462E-9F21-ED8190D675FD} = {FEF0D299-A35E-4976-8422-506B2AAA38A2}
 		{DFB0F0C2-CB63-42D8-9F61-6A238EB5A9A6} = {C3D4BCBD-1B22-45C1-A74A-B21F45C511E1}
 		{711ACB4B-3063-4F9E-88E6-10481741B3BF} = {C3D4BCBD-1B22-45C1-A74A-B21F45C511E1}
+		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8} = {FEF0D299-A35E-4976-8422-506B2AAA38A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2470D0A2-8D65-4C41-94F5-4324F1DB51F6}
