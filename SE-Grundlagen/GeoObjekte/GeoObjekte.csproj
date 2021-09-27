@@ -52,6 +52,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Linie.cs" />
+    <Compile Include="NeueLinieFormular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NeueLinieFormular.Designer.cs">
+      <DependentUpon>NeueLinieFormular.cs</DependentUpon>
+    </Compile>
     <Compile Include="NeuerPunkt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +70,9 @@
     <Compile Include="Punkt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NeueLinieFormular.resx">
+      <DependentUpon>NeueLinieFormular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NeuerPunkt.resx">
       <DependentUpon>NeuerPunkt.cs</DependentUpon>

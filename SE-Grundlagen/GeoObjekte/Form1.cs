@@ -35,16 +35,36 @@ namespace GeoObjekte
                     //Abbruch
                 }
             }
+            if (radioButtonLinie.Checked)
+            {
+                NeueLinieFormular neueLinieFormular = new NeueLinieFormular();
+                neueLinieFormular.ShowDialog();
+                if (neueLinieFormular.DialogResult == DialogResult.OK)
+                {
+                    listBoxObjekte.Items.Add(neueLinieFormular.l);
+                    PanelNeuzeichnen();
+                }
+            }
         }
         void PanelNeuzeichnen()
         {
             Graphics graphics = panel1.CreateGraphics();
             graphics.Clear(SystemColors.Control);
 
-            foreach (Punkt punkt in listBoxObjekte.Items)
+            foreach (object item in listBoxObjekte.Items)
             {
-                graphics.DrawEllipse(new Pen(punkt.farbe, 3), (float)punkt.x, (float)punkt.y, 1, 1);
-
+                if (item is Punkt)
+                {
+                    Punkt p = item as Punkt;
+                    //p = (Punkt)item;
+                    graphics.DrawEllipse(new Pen(p.farbe, 3), (float)p.x, (float)p.y, 1, 1);
+                } 
+                else 
+                if (item is Linie)
+                {
+                    Linie l = item as Linie;
+                    graphics.DrawLine(new Pen(l.farbe, 3), (float)l.A.x, (float)l.A.y, (float)l.B.x, (float)l.B.y);
+                }
             }
         }
 
