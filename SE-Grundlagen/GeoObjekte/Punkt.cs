@@ -21,6 +21,18 @@ namespace GeoObjekte
             name = "Punkt " + anzahl.ToString();
         }
 
+        public string GetInfo()
+        {
+            string info = "";
+
+            info += name + "\r\n";
+            info += $"P: ({x}|{y})\r\n";
+            info += "Farbe: " + farbe.Name + Environment.NewLine;
+
+            return info;
+        }
+
+
         public string getName()
         {
             return name;

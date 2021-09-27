@@ -92,5 +92,40 @@ namespace GeoObjekte
         {
 
         }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            string ObejektInformationen = "";
+            // Auswahl bestimmen
+            if (listBoxObjekte.SelectedItem is Linie)
+            {
+                ObejektInformationen = (listBoxObjekte.SelectedItem as Linie).GetInfo();
+            }else if (listBoxObjekte.SelectedItem is Punkt)
+            {
+                ObejektInformationen = (listBoxObjekte.SelectedItem as Punkt).GetInfo();
+            }
+
+
+            //Info von gewähltem Element in TextboxInfo ausgeben
+            textBoxInfo.Text = ObejektInformationen;
+        }
+
+        private void listBoxObjekte_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string ObejektInformationen = "";
+            // Auswahl bestimmen
+            if (listBoxObjekte.SelectedItem is Linie)
+            {
+                ObejektInformationen = (listBoxObjekte.SelectedItem as Linie).GetInfo();
+            }
+            else if (listBoxObjekte.SelectedItem is Punkt)
+            {
+                ObejektInformationen = (listBoxObjekte.SelectedItem as Punkt).GetInfo();
+            }
+
+
+            //Info von gewähltem Element in TextboxInfo ausgeben
+            textBoxInfo.Text = ObejektInformationen;
+        }
     }
 }

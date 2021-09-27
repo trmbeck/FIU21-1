@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatischeElemente", "Statis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoObjekte", "GeoObjekte\GeoObjekte.csproj", "{D4B8408B-60D8-4165-8953-AD6ED147B8D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VererbungPolymorphie", "VererbungPolymorphie\VererbungPolymorphie.csproj", "{996F410C-D629-4947-92AF-23B6E73A0A21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{D4B8408B-60D8-4165-8953-AD6ED147B8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B8408B-60D8-4165-8953-AD6ED147B8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B8408B-60D8-4165-8953-AD6ED147B8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996F410C-D629-4947-92AF-23B6E73A0A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996F410C-D629-4947-92AF-23B6E73A0A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996F410C-D629-4947-92AF-23B6E73A0A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996F410C-D629-4947-92AF-23B6E73A0A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{711ACB4B-3063-4F9E-88E6-10481741B3BF} = {C3D4BCBD-1B22-45C1-A74A-B21F45C511E1}
 		{70A04D61-9265-4DF9-9EC7-FDFA3E5DEFD8} = {FEF0D299-A35E-4976-8422-506B2AAA38A2}
 		{D4B8408B-60D8-4165-8953-AD6ED147B8D5} = {BEE83FAC-0FAA-4C4F-9FC4-DF641D138C02}
+		{996F410C-D629-4947-92AF-23B6E73A0A21} = {BEE83FAC-0FAA-4C4F-9FC4-DF641D138C02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2470D0A2-8D65-4C41-94F5-4324F1DB51F6}

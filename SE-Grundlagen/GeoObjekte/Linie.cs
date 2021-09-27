@@ -9,6 +9,7 @@ namespace GeoObjekte
 {
     public class Linie
     {
+        #region Felder
         public static int anzahl = 0;
 
         public Punkt A;
@@ -16,7 +17,9 @@ namespace GeoObjekte
 
         public Color farbe;
         private string name;
+        #endregion
 
+        #region Konstruktoren
         public Linie(double x1, double y1, double x2, double y2, Color c)
         {
             A = new Punkt();
@@ -34,6 +37,21 @@ namespace GeoObjekte
             name = "Linie " + anzahl;
         }
 
+        #endregion
+
+        #region Methoden
+        public string GetInfo()
+        {
+            string info = "";
+
+            info += name + "\r\n";
+            info += $"A: ({A.x}|{A.y})\r\n";
+            info += String.Format("B: ({0}|{1})\r\n", B.x, B.y);
+            info += "Farbe: " + farbe.Name + Environment.NewLine;
+            info += "Länge: " + Math.Round(Laenge(),2);
+
+            return info;
+        }
         public string GetName()
         {
             return name;
@@ -55,5 +73,7 @@ namespace GeoObjekte
 
             return c;
         }
+
+        #endregion
     }
 }
