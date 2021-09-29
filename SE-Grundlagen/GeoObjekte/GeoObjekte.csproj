@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeoObjekt.cs" />
     <Compile Include="Linie.cs" />
     <Compile Include="NeueLinieFormular.cs">
       <SubType>Form</SubType>

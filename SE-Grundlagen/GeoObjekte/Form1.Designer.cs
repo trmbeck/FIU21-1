@@ -44,7 +44,9 @@ namespace GeoObjekte
             this.btnRight = new System.Windows.Forms.Button();
             this.textBoxInfo = new System.Windows.Forms.TextBox();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxObjekte
@@ -197,11 +199,29 @@ namespace GeoObjekte
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(334, 255);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 360);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.textBoxInfo);
             this.Controls.Add(this.btnDown);
@@ -217,6 +237,7 @@ namespace GeoObjekte
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +260,7 @@ namespace GeoObjekte
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.TextBox textBoxInfo;
         private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

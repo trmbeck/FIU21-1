@@ -51,15 +51,15 @@ namespace GeoObjekte
             Graphics graphics = panel1.CreateGraphics();
             graphics.Clear(SystemColors.Control);
 
-            foreach (object item in listBoxObjekte.Items)
+            foreach (GeoObjekt item in listBoxObjekte.Items)
             {
                 if (item is Punkt)
                 {
                     Punkt p = item as Punkt;
                     //p = (Punkt)item;
                     graphics.DrawEllipse(new Pen(p.farbe, 3), (float)p.x, (float)p.y, 1, 1);
-                } 
-                else 
+                }
+                else
                 if (item is Linie)
                 {
                     Linie l = item as Linie;
@@ -77,8 +77,8 @@ namespace GeoObjekte
         {
             if (listBoxObjekte.SelectedItem != null)
             {
-                Punkt p = (Punkt)listBoxObjekte.SelectedItem;
-                p.y--;
+                GeoObjekt p = (GeoObjekt)listBoxObjekte.SelectedItem;
+                p.Verschieben(0,-(double)numericUpDown1.Value);
                 PanelNeuzeichnen();
             }
         }

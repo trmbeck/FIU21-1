@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GeoObjekte
 {
-    public class Linie
+    public class Linie : GeoObjekt
     {
         #region Felder
         public static int anzahl = 0;
@@ -15,7 +15,6 @@ namespace GeoObjekte
         public Punkt A;
         public Punkt B;
 
-        public Color farbe;
         private string name;
         #endregion
 
@@ -40,7 +39,7 @@ namespace GeoObjekte
         #endregion
 
         #region Methoden
-        public string GetInfo()
+        public override string GetInfo()
         {
             string info = "";
 
@@ -72,6 +71,14 @@ namespace GeoObjekte
             c = Math.Sqrt(a * a + b * b); // Wurzel ziehen
 
             return c;
+        }
+
+        public override void Verschieben(double dx,double dy) //x=1, y=1
+        {
+            A.x += dx;
+            A.y += dy;
+            B.x += dx;
+            B.y += dy;
         }
 
         #endregion

@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace GeoObjekte
 {
-    public class Punkt
+    public class Punkt : GeoObjekt
     {
         public static int anzahl = 0;
         private string name;
         public double x;
         public double y;
-        public Color farbe;
 
         public Punkt()
         {
@@ -21,7 +20,7 @@ namespace GeoObjekte
             name = "Punkt " + anzahl.ToString();
         }
 
-        public string GetInfo()
+        public override string GetInfo()
         {
             string info = "";
 
@@ -41,6 +40,12 @@ namespace GeoObjekte
         public override string ToString()
         {
             return getName();
+        }
+
+        public override void Verschieben(double deltaX, double deltaY)
+        {
+            x += deltaX;
+            y += deltaY;
         }
     }
 }

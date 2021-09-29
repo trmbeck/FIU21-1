@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeoObjekte
 {
-    class Rechteck
+    public class Rechteck : GeoObjekt
     {
         //Konstruktoren
         public Rechteck()
@@ -17,13 +17,14 @@ namespace GeoObjekte
             B = new Punkt();
         }
 
+
         //Klassenfelder
         public static int anzahl = 0;
+
 
         //Objektfelder
         private Punkt a;
         private Punkt B; // B.x B.y
-        private System.Drawing.Color farbe;
         private string name;
 
 
@@ -68,14 +69,8 @@ namespace GeoObjekte
             B = x;
         }
 
+
         //Methoden
-        public void Verschieben(double deltaX, double deltaY)
-        {
-            a.x += deltaX;
-            a.y += deltaY;
-            B.x += deltaX;
-            B.y += deltaY;
-        }
         public override string ToString()
         {
             return Name;
@@ -86,7 +81,7 @@ namespace GeoObjekte
             seiteA = B.x - a.x;
             return seiteA;
         }
-        public string GetInfo()
+        public override string GetInfo()
         {
             string info = "";
             info += Name + Environment.NewLine;
@@ -98,6 +93,12 @@ namespace GeoObjekte
             info += $"Umfang: " + Umfang + Environment.NewLine;
             info += $"Fläche: " + Flaeche + Environment.NewLine;
             return info;
+        }
+
+        public override void Verschieben(double deltaX, double deltaY)
+        {
+            a.Verschieben(deltaX, deltaY);
+            B.Verschieben(deltaX, deltaY);
         }
     }
 }
