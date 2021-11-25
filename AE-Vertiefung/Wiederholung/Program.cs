@@ -6,6 +6,8 @@ namespace Wiederholung
     {
         static void Main(string[] args)
         {
+           
+
             #region Schlüsselwort var, Convert, parse, tryparse
 
             var zahl = 10;
@@ -179,4 +181,25 @@ namespace Wiederholung
         }
     }
 
+
+
+    abstract class Anzeigegerät
+    {
+        public double Bildschirmgroesse;
+        public void einschalten() { }
+    }
+
+
+    class Fernseher : Anzeigegerät
+    {
+
+    }
+
+
+
+    class Monitor : Anzeigegerät
+    {
+  
+
+    }
 }

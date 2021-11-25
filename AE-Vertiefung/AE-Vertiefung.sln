@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{86C21960-92CF-4552-8B53-DA604E5588AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wiederholung", "Wiederholung\Wiederholung.csproj", "{86C21960-92CF-4552-8B53-DA604E5588AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themen", "Themen", "{8E38B784-10C0-4180-AD04-0ADDEADC5624}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aufgaben", "Aufgaben", "{C46800E2-4832-4ABC-A50C-488621C46A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugHierarchie", "FahrzeugHierarchie\FahrzeugHierarchie.csproj", "{03B09131-C229-43F0-98BB-616A263F54D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchieAngestellter", "HierarchieAngestellter\HierarchieAngestellter.csproj", "{58CE03DE-EAFF-4363-9327-6C786599BA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliothekVerwendenAngestllter", "BibliothekVerwendenAngestllter\BibliothekVerwendenAngestllter.csproj", "{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bilder", "Bilder", "{61699A5C-1542-4C9C-85A2-F2CADA7157A3}"
+	ProjectSection(SolutionItems) = preProject
+		Bilder\LösungAngestellter.png = Bilder\LösungAngestellter.png
+		Bilder\LösungKlassenhierarcheFahrzeugi.png = Bilder\LösungKlassenhierarcheFahrzeugi.png
+		Bilder\REchnerverwaltungUML.png = Bilder\REchnerverwaltungUML.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auflistungen", "Auflistungen\Auflistungen.csproj", "{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiederholungen", "Wiederholungen", "{D0C8C629-8433-4569-A466-BA4269893312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsWiederholung", "FormsWiederholung\FormsWiederholung.csproj", "{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +38,37 @@ Global
 		{86C21960-92CF-4552-8B53-DA604E5588AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86C21960-92CF-4552-8B53-DA604E5588AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86C21960-92CF-4552-8B53-DA604E5588AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B09131-C229-43F0-98BB-616A263F54D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B09131-C229-43F0-98BB-616A263F54D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B09131-C229-43F0-98BB-616A263F54D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B09131-C229-43F0-98BB-616A263F54D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CE03DE-EAFF-4363-9327-6C786599BA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CE03DE-EAFF-4363-9327-6C786599BA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CE03DE-EAFF-4363-9327-6C786599BA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CE03DE-EAFF-4363-9327-6C786599BA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86C21960-92CF-4552-8B53-DA604E5588AB} = {D0C8C629-8433-4569-A466-BA4269893312}
+		{03B09131-C229-43F0-98BB-616A263F54D8} = {C46800E2-4832-4ABC-A50C-488621C46A48}
+		{58CE03DE-EAFF-4363-9327-6C786599BA27} = {C46800E2-4832-4ABC-A50C-488621C46A48}
+		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715} = {8E38B784-10C0-4180-AD04-0ADDEADC5624}
+		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A} = {8E38B784-10C0-4180-AD04-0ADDEADC5624}
+		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC} = {D0C8C629-8433-4569-A466-BA4269893312}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5112189-DBFA-462F-BB77-3AFB97679061}
