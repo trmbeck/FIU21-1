@@ -140,6 +140,37 @@ namespace Auflistungen
             //}
 
             #endregion
+
+            //Eigene Liste Mit Monatsnamen
+            Monatsnamen monatsObj = new Monatsnamen();
+            Console.WriteLine(monatsObj.monat[0]);
+            foreach (var item in monatsObj)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("\n\nEnumerator verwenden: ");
+            IEnumerator enumerator =  monatsObj.GetEnumerator();
+
+            while (enumerator.MoveNext()) 
+            {
+                Console.WriteLine(enumerator.Current);
+                if ((string)enumerator.Current == "Jul")
+                    enumerator.MoveNext();
+            }
+
+            //Abfrage über Index
+            Console.WriteLine("\n\nAbfrage über Index:");
+            string test = monatsObj[2];
+            Console.WriteLine(test);
+
+            monatsObj[12] = "März";
+            Console.WriteLine(monatsObj[12]);
+
+            monatsObj.SetZahl(10);
+            Console.WriteLine(monatsObj.GetZahl());
+
+            monatsObj.Zahl = 10;
         }
     }
 }
