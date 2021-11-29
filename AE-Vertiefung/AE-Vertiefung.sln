@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themen", "Themen", "{8E38B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aufgaben", "Aufgaben", "{C46800E2-4832-4ABC-A50C-488621C46A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugHierarchie", "FahrzeugHierarchie\FahrzeugHierarchie.csproj", "{03B09131-C229-43F0-98BB-616A263F54D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugHierarchie", "FahrzeugHierarchie\FahrzeugHierarchie.csproj", "{03B09131-C229-43F0-98BB-616A263F54D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchieAngestellter", "HierarchieAngestellter\HierarchieAngestellter.csproj", "{58CE03DE-EAFF-4363-9327-6C786599BA27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HierarchieAngestellter", "HierarchieAngestellter\HierarchieAngestellter.csproj", "{58CE03DE-EAFF-4363-9327-6C786599BA27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliothekVerwendenAngestllter", "BibliothekVerwendenAngestllter\BibliothekVerwendenAngestllter.csproj", "{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliothekVerwendenAngestllter", "BibliothekVerwendenAngestllter\BibliothekVerwendenAngestllter.csproj", "{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bilder", "Bilder", "{61699A5C-1542-4C9C-85A2-F2CADA7157A3}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,11 +22,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bilder", "Bilder", "{61699A
 		Bilder\REchnerverwaltungUML.png = Bilder\REchnerverwaltungUML.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auflistungen", "Auflistungen\Auflistungen.csproj", "{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auflistungen", "Auflistungen\Auflistungen.csproj", "{0479FC5E-A8B2-4D49-9329-A54A5AD3592A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiederholungen", "Wiederholungen", "{D0C8C629-8433-4569-A466-BA4269893312}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsWiederholung", "FormsWiederholung\FormsWiederholung.csproj", "{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auflistung", "Auflistung\Auflistung.csproj", "{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schnittstellen", "Schnittstellen\Schnittstellen.csproj", "{9C4A51F8-4884-4975-8D65-02E2534F52DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +62,14 @@ Global
 		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4A51F8-4884-4975-8D65-02E2534F52DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4A51F8-4884-4975-8D65-02E2534F52DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4A51F8-4884-4975-8D65-02E2534F52DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4A51F8-4884-4975-8D65-02E2534F52DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{DAAD5BFF-F3CF-4223-B46B-D65C74D6B715} = {8E38B784-10C0-4180-AD04-0ADDEADC5624}
 		{0479FC5E-A8B2-4D49-9329-A54A5AD3592A} = {8E38B784-10C0-4180-AD04-0ADDEADC5624}
 		{3A9B20A2-BE10-41C1-9599-6F49A4B204EC} = {D0C8C629-8433-4569-A466-BA4269893312}
+		{ADD62CA5-4E4C-461A-83AC-5D7CF844AB5F} = {C46800E2-4832-4ABC-A50C-488621C46A48}
+		{9C4A51F8-4884-4975-8D65-02E2534F52DF} = {8E38B784-10C0-4180-AD04-0ADDEADC5624}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5112189-DBFA-462F-BB77-3AFB97679061}
